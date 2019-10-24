@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Website Template</title>
+</head>
+<style>
+    body {
+        height: 100vh;
+        margin: 0;
+    }
+
+    header {
+        position: relative;
+        height: 125px;
+    }
+
+    #section {
+        position: absolute;
+        display: flex;
+        flex-flow: row;
+        top: 67px;
+        margin: auto;
+        right: 317px;
+    }
+
+    .box {
+        position: relative;
+        margin: 2px;
+        height: 50px;
+        width: 100px;
+        /* background-color: aqua; */
+    }
+
+    .logo {
+        position: absolute;
+        left: 82px;
+        margin-top: 20px;
+    }
+
+    .home,
+    .box1 {
+        height: fit-content;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        text-align: center;
+        width: 100%;
+        font-family: sans-serif;
+        font-weight: bolder;
+        font-size: 12px;
+        cursor: pointer;
+    }
+
+    .home:hover {
+        text-decoration: underline;
+        color: #3434c7 !important;
+        background-color: #8282a1;
+        height: 20px;
+        /* width: 100px; */
+        padding: 5px;
+        border-radius: 30px;
+    }
+
+    .boxs:hover {
+        color: #3434c7 !important;
+        background-color: #ebc57a;
+        padding: 5px;
+        height: 40px;
+        width: 145px;
+        border-radius: 30px;
+        text-align: center;
+    }
+
+    .boxs {
+        float: right;
+        position: relative;
+        margin: 2px;
+        height: 50px;
+        width: 155px;
+        border-radius: 30px;
+        background-color: #fca901;
+        top: 19px;
+        right: 81px;
+        color: white;
+    }
+
+    .detail {
+        top: -54px;
+        font-size: 15px;
+        font-family: arial;
+        color: #a6a6a6;
+        background-color: #f4f4f4;
+        border: 16px solid #f4f4f4;
+    }
+
+    .PhnNo {
+        position: absolute;
+        top: 17px;
+        right: 355px;
+    }
+
+    .email {
+        position: absolute;
+        top: 17px;
+        right: 93px;
+    }
+
+    .About {
+        margin-left: 76px;
+    }
+
+    .phn {
+        margin-left: -25px;
+        /* margin-right: -138px; */
+        position: absolute;
+        top: -2px;
+    }
+
+    .mail {
+        position: absolute;
+        margin-left: -29px;
+        top: -5px;
+    }
+
+    .image {
+        position: relative;
+        left: 0;
+        margin-top: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    h1 {
+        z-index: 1;
+        position: absolute;
+        top: 250px;
+        margin: auto;
+        left: 0;
+        right: 0;
+        text-align: center;
+        font-family: arial;
+        font-size: 4em;
+        color: #ec0f35;
+    }
+
+    p {
+        z-index: 1;
+        font-family: Arial, Helvetica, sans-serif;
+        position: absolute;
+        margin: auto;
+        left: 0;
+        right: 0;
+        text-align: center;
+        top: 360px;
+        color: #f50831;
+        font-size: 23px;
+    }
+
+    /* .ad {
+        height: 103%;
+        position: relative;
+    } */
+
+    #new {
+        position: absolute;
+        display: flex;
+        flex-flow: row;
+        top: 465px;
+        /* bottom: 340px; */
+        margin: auto;
+        /* right: -329px; */
+        left: 35%;
+    }
+
+    .abc {
+        margin: 6px;
+    }
+
+    .new1 {
+        text-align: center;
+        font-family: sans-serif;
+        font-weight: bolder;
+        font-size: 12px;
+        cursor: pointer;
+    }
+
+    footer h1 {
+        position: relative;
+        top: 30px;
+        font-size: 32px;
+        color: black;
+    }
+
+    footer p {
+        position: relative;
+        color: #b4b4ad;
+        top: 45px;
+        font-size: 15px
+    }
+
+    .g2,
+    .g1 {
+        padding: 15px;
+        text-align: center;
+        font-family: sans-serif;
+        font-weight: bolder;
+        font-size: 12px;
+        cursor: pointer;
+        /* height: 45px; */
+        width: 180px;
+        border-radius: 30px;
+    }
+
+    .g2 {
+        /* height: 45px; */
+        background-color: #fca901;
+        /* width: 180px;
+        border-radius: 30px; */
+        color: white;
+
+    }
+
+    .g1 {
+        /* text-align: center;
+        font-family: sans-serif;
+        font-weight: bolder;
+        font-size: 12px; */
+        /* cursor: pointer; */
+        border: 1px solid #fca901;
+        background-color: white !important;
+        color: black !important;
+
+    }
+</style>
+
+<body>
+    <header>
+        <div class="detail">
+            <div class="About"> Welcome to Business Pro Services, we have over 12 years of experience</div>
+            <div class="PhnNo"><img class="phn" src="pro-business-website-template (2).jpg" alt="">(00) 568 459 867
+            </div>
+            <div class="email"><img class="mail" src="pro-business-website-template (1).jpg" alt="">example@example.com
+            </div>
+        </div>
+        <img class="logo" src="pro-business-website-template.jpg" alt="">
+        <div id="section">
+            <div class="box">
+                <div class="home">HOME</div>
+
+            </div>
+            <div class="box">
+                <div class="home">ABOUT</div>
+
+            </div>
+
+            <div class="box">
+                <div class="home">SERVICE</div>
+
+            </div>
+            <div class="box">
+                <div class="home">PORTFOLIO</div>
+
+            </div>
+            <div class="box">
+                <div class="home">PAGE</div>
+
+            </div>
+
+            <div class="box">
+                <div class="home">BLOG</div>
+
+            </div>
+            <div class="box">
+                <div class="home">CONTACT</div>
+
+            </div>
+
+        </div>
+        <div class="boxs">
+            <div class="box1">PERCHASE NOW</div>
+
+        </div>
+        </div>
+    </header>
+    <!-- <div class="ad"> -->
+    <h1>We Are Awesome!</h1>
+    <p> Lorem ipsum dolor sit amet, cosectetur adipsicing elit. Doloribus ex ipsa <br>
+        obcaecati maxime perspiciatis error ducimus eaque odio, fugit modi!<br>
+        maxime perspiciatis error ducimus eaque odio, fugit modi!</p>
+    <img class="image" src="photo-1457305237443-44c3d5a30b89.jpg" alt="">
+    <!-- </div> -->
+    <div id="new">
+        <div class="abc">
+            <div class="new1">
+                <div class="g2">EXPLORE MORE</div>
+            </div>
+        </div>
+        <div class="abc">
+            <div class="new1">
+                <div class="g1">PURCHASE NOW</div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <h1>OUR SERVICES</h1>
+        <p>
+            Gravity posture limited evening oncket around the beauty <br>
+            before european union leaders agreed for clear
+        </p>
+
+
+
+    </footer>
+
+</body>
+
+</html>

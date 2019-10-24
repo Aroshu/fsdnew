@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <style>
+        .bg-light {
+            height: 85px;
+            background-color: #27bec5 !important;
+        }
+
+        .navbar-light .navbar-brand {
+            position: relative;
+            top: 20px;
+            left: 150px;
+            font-size: 10px;
+            color: #767676 !important;
+        }
+
+        .logo {
+            position: relative;
+            top: -20px;
+            left: 80px;
+            font-size: 40px;
+            font-weight: bolder;
+            color: white;
+        }
+
+        .navbar-nav {
+            position: relative;
+            left: 275px;
+        }
+
+        *,
+        ::after,
+        ::before {
+            box-sizing: border-box;
+            color: white !important;
+        }
+
+        .nav-link:hover {
+            text-decoration: underline;
+        }
+
+        .nav-item {
+            margin: 5px;
+        }
+
+        .w-100 {
+            /* width: 100%!important; */
+            height: 500px;
+            margin-left: 173px;
+            width: 75% !important;
+        }
+
+        .carousel-control-prev-icon,
+        .carousel-control-next-icon {
+            background-color: #27bec5;
+            height: 50px;
+            width: 50px;
+        }
+
+        .breadcrumb-item.active {
+            margin-left: 160px;
+            color: #27bec5 !important;
+            color: #6c757d;
+            font-weight: bold;
+        }
+
+        .card {
+            left: 125px;
+            width: 235px !important;
+            height: 350px;
+            margin: 20px;
+            position: relative;
+        }
+
+        p {
+            color: black !important;
+        }
+
+        #titles {
+            margin-top: 50px;
+            display: flex;
+            background: #e6e6e6;
+        }
+
+        .card-title {
+            margin-top: 60px;
+            color: #27bec5 !important;
+        }
+
+        .card-img-top {
+            width: 40%;
+            margin: auto;
+            /* height: 20%; */
+            position: relative;
+            top: 20px;
+
+        }
+
+        .btn-primary {
+            margin-left: 45px;
+            background-color: #27bec5 !important;
+            border: none;
+        }
+
+        .navebar {
+            height: 100px;
+        }
+
+        .bottom {
+            background: #f1f1f1 !important;
+            position: relative;
+            height: 65px;
+        }
+
+        .brand {
+            top: 0 !important;
+        }
+
+        span.log {
+            position: absolute;
+            top: -73px;
+            left: 4px;
+        }
+
+        @media screen and (max-width: 500px) {
+            .carousel {
+                display: none;
+            }
+
+            #titles {
+                display: flex;
+                flex-wrap: wrap;
+            }
+
+            .navbar-light .navbar-brand {
+                left: 0;
+            }
+        }
+
+        @media screen and (max-width: 1100px) {
+
+            #titles {
+                display: flex;
+                flex-wrap: wrap;
+            }
+        }
+        .twitter{
+            margin: 3px;
+            height: 30px;
+        }
+        .sider{
+            display: flex;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">
+            <span class="log" style='font-size:100px;font-weight: bolder;
+            font-size: 105px;
+            color: white;'>&#119978;</span>
+            <div class="logo">
+                YOUR LOGO</div>
+        </a>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active item">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true"></a>
+                </li>
+            </ul>
+        </div>
+        <div class="sider">
+            <img class="twitter"
+                src="https://icon-library.net/images/white-twitter-icon/white-twitter-icon-13.jpg"
+                alt="">
+            <img class="twitter" src="https://www.ee.iitb.ac.in/web//images/mailiconwhite.png" alt="">
+            <img class="twitter"
+                src="https://icon-library.net/images/facebook-icon-png-white/facebook-icon-png-white-11.jpg"
+                alt="">
+        </div>
+    </nav>
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item active" aria-current="page">Home/</li>
+        </ol>
+    </nav>
+
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="https://images.unsplash.com/photo-1565043534447-a83eeb658a05?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
+                    class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="https://images.unsplash.com/photo-1555974176-7296755b680f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
+                    class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="https://images.unsplash.com/photo-1560179305-0daa27c817c4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
+                    class="d-block w-100" alt="...">
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+    <div id="titles">
+        <div class="card" style="width: 18rem;">
+            <img src="https://static.thenounproject.com/png/18307-200.png" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">TITLE 1</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                    card's content.</p>
+                <a href="#" class="btn btn-primary">Read more</a>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <img src="data:image/png;base64,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"
+                class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">TITLE 2</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                    card's content.</p>
+                <a href="#" class="btn btn-primary">Read more</a>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <img src="https://cdn1.iconfinder.com/data/icons/media-devices-outline/100/002-01-512.png"
+                class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">TITLE 3</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                    card's content.</p>
+                <a href="#" class="btn btn-primary">Read more</a>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <img src="https://i.pinimg.com/originals/2a/f5/97/2af597e917d9a97fa889e71d536a1ca9.png" class="card-img-top"
+                alt="...">
+            <div class="card-body">
+                <h5 class="card-title">TITLE 4</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                    card's content.</p>
+                <a href="#" class="btn btn-primary">Read more</a>
+            </div>
+        </div>
+    </div>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light navebar">
+            <div class="sider">
+                    <img class="twitter"
+                        src="https://icon-library.net/images/white-twitter-icon/white-twitter-icon-13.jpg"
+                        alt="">
+                    <img class="twitter" src="https://www.ee.iitb.ac.in/web//images/mailiconwhite.png" alt="">
+                    <img class="twitter"
+                        src="https://icon-library.net/images/facebook-icon-png-white/facebook-icon-png-white-11.jpg"
+                        alt="">
+                </div>
+        <!-- <a class="navbar-brand" href="#">Navbar w/ text</a> -->
+        <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                </li>
+            </ul>
+            <span class="navbar-text">
+                +4475 000 0000</br>
+                0800 000 0000</br>
+                info@yourcompany.co.uk
+            </span>
+        </div>
+    </nav>
+    <nav class="navbar fixed-bottom navbar-light bg-light bottom">
+        <a class="navbar-brand brand" href="#">The Company Wareouse Ltd. Registered Company Number: 123456 Registered
+            Address:
+            2nd Floor , 43 Broomfield Road, Chelmsford, Essex, CM1 1SKY</a>
+    </nav>
+</body>
+
+</html>

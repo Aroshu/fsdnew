@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Zemez</title>
+    <style>
+        /* #logo {
+            position: relative;
+            height: 35px;
+            top: 35px;
+            left: 20px;
+        }
+
+        .logo {
+            position: absolute;
+            left: 45%;
+            top: 20px;
+        } */
+
+        header {
+            /* top: 25px; */
+            position: relative;
+            display: flex;
+            margin: auto;
+            width: 80vw;
+        }
+
+        h1 {
+            margin: 10px;
+            color: #60c0e4;
+            font-size: 36px;
+            font-family: arial;
+        }
+
+        h2 {
+            top: 14px;
+            left: 175px;
+            position: absolute;
+            color: #545559;
+            font-size: 17px;
+            font-family: arial;
+        }
+
+        .AboutPhn {
+            position: relative;
+            top: 48px;
+            left: 249px;
+            font-family: arial;
+            color: #545559;
+            font-size: 12px;
+
+        }
+
+        .phn {
+            height: 20px;
+            margin-left: -32px;
+            /* margin-right: -138px; */
+            position: absolute;
+            top: -2px;
+        }
+
+        .PhnNo {
+            width: 150px;
+            position: relative;
+            top: 17px;
+            left: 762px;
+            font-size: 20px;
+            font-family: arial;
+            color: #545559;
+            color: #545559;
+        }
+
+        #options {
+            left: 0;
+            background-color: #444549;
+            position: absolute;
+            display: flex;
+            flex-flow: row;
+            top: 80px;
+            width: 100%;
+        }
+
+        .box {
+            left: 112px;
+            position: relative;
+            margin: 2px;
+            height: 50px;
+            width: 93px;
+        }
+
+        .home {
+            height: fit-content;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+            text-align: center;
+            width: 100%;
+            color: white;
+            font-family: sans-serif;
+            font-weight: bolder;
+            font-size: 12px;
+            cursor: pointer;
+        }
+
+        .home:hover {
+            /* text-decoration: underline;
+            color: #3434c7 !important; */
+            background-color: #63bfe6;
+            height: 43px;
+            width: 100px;
+            padding: 5px;
+        }
+
+        .girl {
+            top: 65px;
+            position: relative;
+            height: 500px;
+            left: 195px;
+        }
+
+        #Imagehead {
+            position: absolute;
+            left: 635px;
+            top: 305px;
+            font-size: 54px;
+            font-family: arial;
+            color: #60c0e4;
+        }
+
+        #detail {
+            display: flex;
+            /* flex-flow: row; */
+            /* left: 160px; */
+            /* margin: auto;
+            width: 58vw; */
+        }
+
+        .Box {
+            left: 133px;
+            /* margin-left: 12px; */
+            z-index: 1;
+            height: 250px;
+            width: 270px;
+            background-color: #10a2dd;
+            position: relative;
+        }
+
+        #global {
+            margin-top: 20px;
+            margin-left: 20px;
+            height: 50px;
+        }
+
+        h3,
+        p {
+            margin-left: 20px;
+            color: white;
+            font-family: arial;
+        }
+
+        h3 {
+            font-size: 20px;
+        }
+
+        p {
+            font-size: 11px;
+        }
+
+        .Box:hover {
+            position: relative;
+            top: -20px;
+            height: 270px;
+            width: 220px;
+        }
+
+
+        table {
+            font-family: arial;
+            /* float: right; */
+            font-size: 10px;
+            text-align: justify;
+            margin-left: 140px;
+            width: 78%;
+        }
+
+
+        th {
+            padding: 0 90px 0 15px;
+            border-bottom-style: inset;
+        }
+
+        table tr th h3 {
+            position: relative;
+            color: #515151;
+            left: 58px;
+            top: 50px;
+
+        }
+
+        table tr th p {
+            color: #515151;
+            position: relative;
+            left: 58px;
+            top: -42px;
+
+        }
+
+        img {
+            height: 70px;
+        }
+
+        table .t1 :nth-child(1) {
+            color: #60c0e4;
+        }
+
+        #service p {
+            margin-left: 0;
+            top: 0;
+            color: #515151;
+            left: 0;
+            font-size: 14px;
+            font-weight: bold;
+        }
+
+        .about,
+        .about1 {
+            margin: 20px;
+            width: 300px;
+        }
+
+        .about1 {
+            width: 350px;
+        }
+
+        table.tick {
+            margin-top: -12px;
+            margin-left: 0;
+            width: 300px;
+        }
+
+        table.tick tr th {
+            padding: 0;
+        }
+
+        #service {
+            position: relative;
+            display: flex;
+            margin-left: 133px;
+        }
+
+        #girlimg {
+            height: 255px;
+        }
+
+        #service h1 {
+            color: #767676;
+        }
+
+        table.tick tr th.a p {
+            color: #6fc3e8 !important;
+        }
+
+        #service .paragraph {
+            font-size: 18px;
+        }
+
+        #help {
+            background-color: #57a9ce;
+            width: 100%;
+            height: 64%;
+            margin-left: 0;
+        }
+
+        .help {
+            position: relative;
+            right: 10px;
+        }
+
+        #help h1 {
+            color: white;
+            position: absolute;
+            margin-left: 57px;
+        }
+
+        table#help tr th h3 {
+            position: relative;
+            color: white;
+            left: -17px;
+            top: 2px;
+            font-size: 16px;
+        }
+
+        table#help tr th p {
+            color: white;
+            font-size: 12px;
+        }
+
+        #furtherdtl {
+            right: 149px;
+            position: absolute;
+            height: 230px;
+            width: 300px;
+            background-color: #f4f9fd;
+            top: 407px;
+            margin-top: 40px;
+        }
+
+        .boy {
+            margin-left: 20px;
+        }
+
+        .dtl {
+            left: 145px;
+            position: absolute;
+            top: 45px;
+            font-size: 15px;
+        }
+
+        .dtl div {
+            color: #57a9ce;
+            font-size: 18px;
+        }
+
+        .dot {
+            right: 70px;
+            position: relative;
+            height: 20px;
+            width: 20px;
+            background-color: #bbb;
+            border-radius: 50%;
+            display: inline-block;
+            top: 100px;
+        }
+
+        .dot:hover {
+
+            background-color: #57a9ce;
+        }
+
+        .readmore {
+            position: relative;
+            font-family: arial;
+            width: 130px;
+            height: 50px;
+            background-color: #63bfe6;
+            text-align: center;
+            color: white;
+            margin-top: 6px;
+        }
+
+        .read {
+            right: 0;
+            /* height: fit-content; */
+            margin-top: 17px;
+            /* top: 0; */
+            position: absolute;
+            left: 0;
+        }
+
+        .location {
+            color: #848589;
+            height: 55px;
+            width: 334px;
+            /* margin-top: -18px; */
+            margin: 15px;
+            margin-left: 95px;
+            font-size: 22px;
+        }
+
+        #footerdtl {
+            /* height: 323px; */
+            width: 100%;
+            background-color: #434448;
+            display: flex;
+            flex-wrap: wrap;
+            margin-top: 55px;
+        }
+
+        .images {
+            position: relative;
+            height: 40px;
+            right: 25px;
+            top: 10px;
+        }
+
+        .location .folow {
+            left: 24px;
+            top: -30px;
+            position: relative;
+        }
+
+        .location .follow {
+            position: relative;
+            left: -20px;
+            top: 20px;
+            font-size: 19px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Business<h2>Company</h2>
+        </h1>
+        <div class="PhnNo"><img class="phn" src="purepng.webp" alt="">800-2345-6789
+        </div>
+        <div class="AboutPhn">One of our representatives will happily contact you within 24 hours.For urgent needs
+            call us at</div>
+    </header>
+    <div id="options">
+        <div class="box">
+            <div class="home">HOME</div>
+
+        </div>
+        <div class="box">
+            <div class="home">ABOUT</div>
+
+        </div>
+
+        <div class="box">
+            <div class="home">SERVICE</div>
+
+        </div>
+        <div class="box">
+            <div class="home">FAQS</div>
+
+        </div>
+        <div class="box">
+            <div class="home">CONTACTS</div>
+        </div>
+    </div>
+    <div>
+        <img class="girl" src="istockphoto-476903916-612x612.jpg" alt="">
+        <div id="Imagehead"> Helping with any of your</br> business needs!
+        </div>
+    </div>
+    <div id="detail">
+        <div class="Box">
+            <img id="global" src="images (4).jpg" alt="">
+            <h3>Global</br> research </h3>
+            <p>Lorem ispsum dolor sit amet conse ctetur
+                adispisicing
+                elit, sed do eiusmod tempor incididunt ut labore et dolore manga aliqua. Ut enim ad minim veniam, quis
+                nosturd.</p>
+        </div>
+        <div class="Box">
+            <img id="global" src="werayuth170900010.jpg" alt="">
+            <h3>Creative</br> ideas</h3>
+            <p>Lorem ispsum dolor sit amet conse ctetur
+                adispisicing
+                elit, sed do eiusmod tempor incididunt ut labore et dolore manga aliqua. Ut enim ad minim veniam, quis
+                nosturd.</p>
+        </div>
+        <div class="Box">
+            <img id="global" src="images.png" alt="">
+            <h3>New</br> services</h3>
+            <p>Lorem ispsum dolor sit amet conse ctetur
+                adispisicing
+                elit, sed do eiusmod tempor incididunt ut labore et dolore manga aliqua. Ut enim ad minim veniam, quis
+                nosturd.</p>
+        </div>
+        <div class="Box">
+            <img id="global" src="com.ibytecode.visitormgmtpro.png" alt="">
+            <h3>Pro</br> management</h3>
+            <p>Lorem ispsum dolor sit amet conse ctetur
+                adispisicing
+                elit, sed do eiusmod tempor incididunt ut labore et dolore manga aliqua. Ut enim ad minim veniam, quis
+                nosturd.</p>
+        </div>
+    </div>
+    <table>
+        <tr>
+            <th class="t1">
+
+                <h3>Incididunt ut labore et dolore</h3><img src="images (1).png" alt="">
+                <P>Lorem ispsum dolor sit amet
+                    conse ctetur
+                    adispisicing
+                    elit, sed do eiusmod tempor incididunt ut labore et dolore</P>
+            </th>
+            <th>
+
+                <h3>Incididunt ut labore et dolore</h3> <img
+                    src="256-256-1212c621ce692baa01da50e2c57235db-management.png" alt="">
+                <P>Lorem ispsum dolor sit amet
+                    conse ctetur
+                    adispisicing
+                    elit, sed do eiusmod tempor incididunt ut labore et dolore</P>
+            </th>
+        </tr>
+        <tr>
+            <th>
+
+                <h3>Incididunt ut labore et dolore</h3><img src="500_F_162225104_ZQcQIeUy66WDbGO3wsvtApf1fj0na0wz.jpg"
+                    alt="">
+                <P>Lorem ispsum dolor sit amet
+                    conse ctetur
+                    adispisicing
+                    elit, sed do eiusmod tempor incididunt ut labore et dolore</P>
+            </th>
+            <th>
+
+                <h3>Incididunt ut labore et dolore</h3> <img
+                    src="5-58540_thumb-signal-computer-icons-encapsulated-postscript-thumbs-up.png" alt="">
+                <P>Lorem ispsum dolor sit amet
+                    conse ctetur
+                    adispisicing
+                    elit, sed do eiusmod tempor incididunt ut labore et dolore</P>
+            </th>
+        </tr>
+    </table>
+    <div id="service">
+        <div class="about1">
+            <h1>About</h1>
+            <img id="girlimg" src="images (5).jpg" alt="">
+            <p class="paragraph">
+                Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sad do eiusmod tempor incididunt ut labore
+                et
+                dolore magna aliqua. Ut enim ad minim veniam,quis nostrud exercitation ullamco labpris nisi ut
+                aliquip
+                ex ea commodo consequat. Duis aute irure dolore in reprehenderit in volup-tate velit esse cillum
+                dolore
+                eu fugiat nulla pariatu. Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sad do eiusmod
+                tempor
+                incididunt ut labore et dolore magna aliqua.
+            </p>
+            <div class="readmore">
+                <div class="read">
+                    READ MORE</div>
+            </div>
+        </div>
+        <div class="about">
+            <h1>Services</h1>
+            <p>
+                Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sad do eiusmod tempor incididunt ut labore
+                et
+                dolore magna aliqua. Ut enim ad minim veniam.
+            </p>
+            <table class="tick">
+                <tr>
+                    <th class="b">
+                        <p>&#10004; Lorem ipsum dolor sit amet</p>
+                    </th>
+                </tr>
+                <tr>
+                    <th class="a">
+                        <p>&#10004; Conse ctetur adipisicing</p>
+                    </th>
+                </tr>
+                <tr>
+                    <th class="a">
+                        <p>&#10004; Elit sad do eiusmod tempor</p>
+                    </th>
+                </tr>
+                <tr>
+                    <th class="a">
+                        <p>&#10004; Incididunt ut labore</p>
+                    </th>
+                </tr>
+                <tr>
+                    <th class="a">
+                        <p>&#10004; Et dolore magna aliqua</p>
+                    </th>
+                </tr>
+                <tr>
+                    <th class="a">
+                        <p>&#10004; Ut enim ad minim veniam</p>
+                    </th>
+                </tr>
+                <tr>
+                    <th class="a">
+                        <p>&#10004; Quis nostrud exercitation</p>
+                    </th>
+                </tr>
+                <tr>
+                    <th class="a">
+                        <p>&#10004; Incididunt ut labore </p>
+                    </th>
+                </tr>
+                <tr>
+                    <th class="a">
+                        <p>&#10004; Et dolore magna aliqua</p>
+                    </th>
+                </tr>
+            </table>
+            <div class="readmore">
+                <div class="read">
+                    READ MORE</div>
+            </div>
+        </div>
+        <div class="about">
+            <table id="help">
+                <tr>
+                    <th>
+                        <h1>Help Center.</h1><img class="help" src="hand-give-love-512.png" alt="">
+                    </th>
+                </tr>
+                <tr>
+                    <th>
+                        <h3>Ask Professionals:</h3>
+                        <p>Monday-Friday: 8am-7pm </br> Saturday: 8am-5pm </br> Sunday: 1pm-5pm</p>
+                    </th>
+                </tr>
+                <tr>
+                    <th>
+                        <h3>24/7 Online Support:</h3>
+                        <p>800-2345-6789</p>
+                    </th>
+                </tr>
+            </table>
+        </div>
+        <div id="furtherdtl">
+            <img class="boy" src="images (6).jpg" alt=""><span style='color: #57a9ce; font-size:100px;'>&#10077; </span>
+            <div class="dtl">Lorem ispsum dolor sit amet conse ctetur
+                adispisicing
+                elit, sed do eiusmod tempor incididunt ut labore
+                <div>incididunt ut labore</div>
+            </div>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
+    </div>
+    <footer>
+        <div id="footerdtl">
+            <div class="location">
+                <img class="images" src="66-512.png" alt="">
+                <div class="folow"> 4578 Marmora Road, Glasgow D04 89GR</div>
+
+            </div>
+            <div class="location">
+                <img class="images" src="purepng.webp" alt="">
+                <div class="folow"> 800-2345-6789</div>
+
+            </div>
+            <div class="location">
+                <img class="images" src="Facebook-icon.png" alt="">
+                <div class="folow"> Follow on facebook</div>
+
+            </div>
+            <div class="location">
+                <img class="images" src="email-icon-1024x1024.png" alt="">
+                <div class="folow">info@demolink.org</div>
+
+            </div>
+            <div class="location">
+                <img class="images" src="telephone-icon.png" alt="">
+                <div class="folow">800-2345-6790</div>
+
+            </div>
+            <div class="location">
+                <img class="images" src="twitter-icon-basic-round-social-iconset-s-icons-0.png" alt="">
+                <div class="folow">Follow on
+                    Twitter</div>
+            </div>
+            <div class="location">
+                <div class="follow">Business Company<span style='font-size:20px;'>&#169;</span>2015. Privacy Policy
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
